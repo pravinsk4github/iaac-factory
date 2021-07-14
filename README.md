@@ -6,7 +6,7 @@
 
 IAAC-FACTORY 
     |__ infra (entry point for the IAAC code) 
-        |--- provider.tf  (AWS) 
+        |--- provider.tf  (Azure) 
         |--- backend.tf (will be used for configuring remote state) 
 		|--- data.tf  (data-sources)
         |--- main.tf (aggregator script that assembles different modules to build the desired environment)
