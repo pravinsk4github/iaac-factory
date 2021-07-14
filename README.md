@@ -4,24 +4,11 @@
 # Tool used: Terraform v/1.0.1
 -----------------------------------------------------------------------------------------------------
 
-IAAC-FACTORY 
-|--- infra (entry point for the IAAC code) 
-|	|--- provider.tf  (Azure) 
-|--- config.tf     (aws & state file information) 
-|--- versions.tf
-|--- main.tf
-|--- variable.tf
-|--- terraform.tfvars    (Env values for the build)
-|--- output.tf 
-|__ modules
-	|--- networking		(VPC & components)
-	|	|--- main.tf
-	|	|--- variables.tf
-	|	|__ outputs.tf
-	|
-	 
-    |__ 
         
+        
+IAAC-FACTORY 
+    |__ infra (entry point for the IAAC code) 
+        |--- provider.tf  (Azure) 
         |--- backend.tf (will be used for configuring remote state) 
 		|--- data.tf  (data-sources)
         |--- main.tf (aggregator script that assembles different modules to build the desired environment)
@@ -31,7 +18,7 @@ IAAC-FACTORY
         | 
     |__ env (different evironmental settings)
         |--- dev
-        |   |--- *.tfvars
+        |   	|--- *.tfvars
         |--- qa [Not added any files just left folder for example]
         |--- stage
         |--- prod 
@@ -76,6 +63,7 @@ IAAC-FACTORY
 		|	|--- main.tf
 		|	|--- variables
 		|	|___ outputs.tf
+		
 	
        
 
