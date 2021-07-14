@@ -22,7 +22,7 @@ Tool used: Terraform v/1.0.1
 			| 
     	|__ env (different evironmental settings)
 			|--- dev
-			|  	|--- *.tfvars
+			|  	|--- terraform.tfvars
 			|--- qa [Not added any files just left folder for example]
 			|  
 		|__ modules
